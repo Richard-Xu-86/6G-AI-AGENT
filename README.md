@@ -19,7 +19,7 @@ An AI-powered Wi-Fi access point optimization system that collects real-time per
 
 ## 🛠️ Setup Instructions
 
-### 1. Backend (Flask + RL Agent)
+### 1. Backend (Flask)
 
 ```bash
 cd backend
@@ -33,6 +33,8 @@ cp .env.example .env
 # Run the Flask server
 flask run
 
+### 2. Frontend (React)
+
 #start frontend
 cd frontend
 npm install
@@ -41,6 +43,8 @@ npm install
 echo "REACT_APP_API_URL=http://localhost:5000" > .env
 
 npm start
+
+### 3. RL AGENT (DQN)
 
 #Training the agent
 cd rl
