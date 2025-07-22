@@ -1,0 +1,23 @@
+# === Core Backend ===
+flask
+flask-cors
+python-dotenv
+
+# === RL Agent & Simulation ===
+gym
+shimmy  # For newer gym versions with API compatibility
+stable-baselines3
+numpy
+pandas
+matplotlib
+
+# === Training Utils ===
+tqdm
+rich
+
+# === macOS Only (for CoreWLAN access) ===
+pyobjc  # Required only on macOS for accessing Wi-Fi stats
+
+# === Frontend Note (DO NOT include in requirements.txt) ===
+# React and Axios are installed via npm in the /frontend directory.
+# Do not list them here.

@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.navbar-header {
+  @apply bg-indigo-600 text-white sticky top-0 z-50 shadow-md px-6 py-4 flex justify-between items-center;
+}
+
+.navbar-title {
+  @apply text-xl font-bold;
+}
+
+.navbar-links {
+  @apply space-x-1;
+}
+
+.nav-link {
+  @apply hover:text-gray-200 px-3 py-1;
+}
+
+.nav-link-active {
+  @apply bg-white text-indigo-700 px-3 py-1 rounded;
+}
+
+/* app page styling */
+.app-screen {
+  @apply min-h-screen
+}
+
+/* Run AI Page Styling */
+.run-page {
+  @apply min-h-screen px-6 py-10 bg-gray-100 text-gray-800 flex flex-col items-center;
+}
+
+.run-title {
+  @apply text-2xl font-bold text-indigo-600 mb-4;
+}
+
+.run-button {
+  @apply bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition mb-8;
+}
+
+.run-result {
+  @apply bg-white p-6 rounded-xl shadow-md w-full max-w-lg text-sm;
+}
+
+.result-block {
+  @apply mt-4;
+}
+
+.result-block h3 {
+  @apply font-semibold text-gray-700 mt-4 mb-2;
+}
+
+.result-metrics {
+  @apply bg-gray-100 p-4 rounded-lg flex flex-col gap-2;
+}
+
+.result-metrics div {
+  @apply flex justify-between;
+}
+
+.result-metrics span {
+  @apply font-medium;
+}
+
+/* GraphsPage */
+
+.graphs-page {
+  @apply min-h-screen px-6 py-10 bg-gray-100 text-gray-800 flex flex-col items-center gap-6;
+}
+
+.graph-card {
+  @apply bg-white shadow-md rounded-xl p-6 w-full max-w-6xl;
+}
+
+.graph-title {
+  @apply text-xl font-bold text-indigo-600 mb-4;
+}
+
+.graph-summary {
+  @apply text-base font-semibold text-gray-600 mt-4;
+}
+
+.graphs-filter {
+  @apply mb-4 flex items-center gap-2
+}
+
+.graphs-TimeRange {
+  @apply text-sm font-semibold text-indigo-600 
+}
+.graphs-range {
+  @apply border rounded px-2 py-1 text-sm
+}
+
+.graphs-error {
+  @apply text-red-500 p-4
+}
+
+.graphs-empty {
+  @apply p-4 text-gray-600
+}
+/* HomePage */
+
+.home-container {
+  @apply flex flex-col;
+}
+
+.hero-section {
+  @apply relative h-[80vh] overflow-hidden;
+}
+
+.hero-gif {
+  @apply absolute inset-0 w-full h-full object-cover brightness-75 z-0;
+}
+
+.hero-content {
+  @apply relative z-10 flex items-center justify-center h-full;
+}
+
+.hero-card {
+  @apply bg-white bg-opacity-90 p-8 rounded-xl shadow-xl text-center max-w-md w-full;
+}
+
+.hero-title {
+  @apply text-2xl font-bold text-indigo-700 mb-2;
+}
+
+.hero-text {
+  @apply text-gray-700;
+}
+
+.info-section {
+  @apply bg-white py-12 px-6 rounded-xl shadow-lg max-w-4xl mx-auto my-10;
+}
+
+.info-title {
+  @apply text-3xl font-bold text-center text-gray-800 mb-6;
+}
+
+.info-text {
+  @apply space-y-4 text-gray-800 text-base leading-relaxed;
+}
+
+.info-text-main {
+  @apply text-lg text-gray-700 text-center mb-6;
+}
+
+.info-stats {
+  @apply font-semibold text-indigo-600
+}
+
+
+/* History Page */
+
+.history-error {
+  @apply text-red-500
+}
+
+.history-page {
+  @apply p-4
+}
+
+.history-section {
+  @apply flex justify-between items-center mb-4
+}
+
+.history-title {
+  @apply text-xl font-bold
+}
+
+.history-button {
+  @apply bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow
+}
+
+.history-table {
+  @apply w-full border-collapse border
+}
+
+.history-header {
+  @apply border px-2 py-1 text-left
+}
+
+.history-data {
+  @apply border px-2 py-1
+}

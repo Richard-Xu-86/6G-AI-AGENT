@@ -1,0 +1,52 @@
+# === Don't ignore everything!
+# Remove or comment this out unless you absolutely know what you're doing
+# *
+
+# === Python / Flask backend ===
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.log
+
+# Flask
+instance/
+*.sqlite3
+*.db
+.env
+.env.*
+
+# Model training artifacts
+models/
+checkpoints/
+runs/
+*.zip
+*.pth
+*.pt
+videos/
+monitor.csv
+
+# === Node / React frontend ===
+frontend/node_modules/
+frontend/build/
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/.env.test.local
+
+# === Editor / System junk ===
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
