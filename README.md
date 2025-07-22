@@ -33,8 +33,11 @@ cp .env.example .env
 # Run the Flask server
 flask run
 
-### 2. Frontend (React)
+---
+```
 
+### 2. Frontend (React)
+```bash
 #start frontend
 cd frontend
 npm install
@@ -43,10 +46,11 @@ npm install
 echo "REACT_APP_API_URL=http://localhost:5000" > .env
 
 npm start
-
+```
 ### 3. RL AGENT (DQN)
-
+```bash
 #Training the agent
 cd rl
 
 python train_agent.py
+```
